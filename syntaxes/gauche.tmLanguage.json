@@ -13,6 +13,9 @@
 		"expression": {
 			"patterns": [
 				{
+					"include": "#fileutil"
+				},
+				{
 					"include": "#controlkeywords"
 				},
 				{
@@ -67,6 +70,14 @@
 				}
 			]
 		},
+		"fileutil": {
+			"patterns": [
+				{
+					"name": "keyword.file.util.gauche",
+					"match": "\\b(directory-list)\\b"
+				}
+			]
+		},
 		"controlkeywords": {
 			"patterns": [
 				{
@@ -87,7 +98,7 @@
 			"patterns": [
 				{
 					"name": "keyword.list.gauche",
-					"match": "\\b(apply|list|car|caar|cdr|cadr|cddr|quote)\\b"
+					"match": "\\b(apply|list|car|caar|cdr|cadr|cddr|quote|remove)\\b"
 				}
 			]
 		},
