@@ -51,6 +51,14 @@
 				}
 			]
 		},
+		"math": {
+			"patterns": [
+				{
+					"name": "keyword.operator.arithmetic.gauche",
+					"match": "\\b(+|-|*)\\b"
+				}
+			]
+		},
 		"strings": {
 			"name": "string.quoted.double.gauche",
 			"begin": "\"",
@@ -64,7 +72,7 @@
 		},
 		"regexp": {
 			"name": "string.regex.gauche",
-			"begin": "/#",
+			"begin": "#/",
 			"end": "/"
 		}
 	},
