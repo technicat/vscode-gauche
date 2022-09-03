@@ -16,16 +16,19 @@
 					"include": "#keywords"
 				},
 				{
+					"include": "#defkeywords"
+				},
+				{
 					"include": "#libs"
 				},
 				{
 					"include": "#math"
 				},
 				{
-					"include": "#strings"
+					"include": "#regex"
 				},
 				{
-					"include": "#regex"
+					"include": "#strings"
 				},
 				{
 					"include": "#paren-expression"
@@ -56,7 +59,15 @@
 			"patterns": [
 				{
 					"name": "keyword.control.gauche",
-					"match": "\\b(case|cond|cut|define|do|else|guard|if|lambda|let|letrec|let-values)\\b"
+					"match": "\\b(case|cond|cut|do|else|guard|if)\\b"
+				}
+			]
+		},
+		"defkeywords": {
+			"patterns": [
+				{
+					"name": "keyword.define.gauche",
+					"match": "\\b(define-class|define-method|define|lambda|let-values|letrec|let)\\b"
 				}
 			]
 		},
@@ -90,7 +101,13 @@
 		"regexp": {
 			"name": "string.regex.gauche",
 			"begin": "#/",
-			"end": "/"
+			"end": "/",
+			"patterns": [
+				{
+					"name": "constant.character.escape.gauche",
+					"match": "\\\\."
+				}
+			]
 		},
 		"comment": {
 			"name": "comment.gauche",
