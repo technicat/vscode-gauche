@@ -16,6 +16,9 @@
 					"include": "#controlkeywords"
 				},
 				{
+					"include": "#listkeywords"
+				},
+				{
 					"include": "#boolkeywords"
 				},
 				{
@@ -75,8 +78,16 @@
 		"boolkeywords": {
 			"patterns": [
 				{
-					"name": "keyword.control.gauche",
+					"name": "keyword.logical.gauche",
 					"match": "\\b(and|or|not)\\b"
+				}
+			]
+		},
+		"listkeywords": {
+			"patterns": [
+				{
+					"name": "keyword.list.gauche",
+					"match": "\\b(apply|list|car|caar|cdr|cadr|cddr|quote)\\b"
 				}
 			]
 		},
