@@ -3,6 +3,9 @@
 	"name": "Gauche",
 	"patterns": [
 		{
+			"include": "#comment"
+		},
+		{
 			"include": "#expression"
 		}
 	],
@@ -11,6 +14,9 @@
 			"patterns": [
 				{
 					"include": "#keywords"
+				},
+				{
+					"include": "#math"
 				},
 				{
 					"include": "#strings"
@@ -55,7 +61,7 @@
 			"patterns": [
 				{
 					"name": "keyword.operator.arithmetic.gauche",
-					"match": "\\b(+|-|*)\\b"
+					"match": "-"
 				}
 			]
 		},
@@ -74,6 +80,11 @@
 			"name": "string.regex.gauche",
 			"begin": "#/",
 			"end": "/"
+		},
+		"comment": {
+			"name": "comment.gauche",
+			"begin": ";",
+			"end": "\n"
 		}
 	},
 	"scopeName": "source.gauche"
