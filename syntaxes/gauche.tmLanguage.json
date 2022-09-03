@@ -13,10 +13,19 @@
 		"expression": {
 			"patterns": [
 				{
+					"include": "#paren-expression"
+				},
+				{
 					"include": "#fileutil"
 				},
 				{
 					"include": "#controlkeywords"
+				},
+				{
+					"include": "#eqkeywords"
+				},
+				{
+					"include": "#stringfuns"
 				},
 				{
 					"include": "#listkeywords"
@@ -37,16 +46,13 @@
 					"include": "#libs"
 				},
 				{
-					"include": "#math"
-				},
-				{
 					"include": "#regex"
 				},
 				{
 					"include": "#strings"
 				},
 				{
-					"include": "#paren-expression"
+					"include": "#math"
 				}
 			]
 		},
@@ -74,7 +80,7 @@
 			"patterns": [
 				{
 					"name": "keyword.file.util.gauche",
-					"match": "\\b(directory-list)\\b"
+					"match": "\\b(directory-list|file-is-regular\\\\?)\\b"
 				}
 			]
 		},
@@ -91,6 +97,22 @@
 				{
 					"name": "keyword.logical.gauche",
 					"match": "\\b(and|or|not)\\b"
+				}
+			]
+		},
+		"eqkeywords": {
+			"patterns": [
+				{
+					"name": "keyword.logical.gauche",
+					"match": "\\b(eq\\\\?|equal\\\\?|equalv\\\\?|string=\\\\?)\\b"
+				}
+			]
+		},
+		"stringfuns": {
+			"patterns": [
+				{
+					"name": "keyword.string.gauche",
+					"match": "\\b(string-ref|string=\\\\?)\\b"
 				}
 			]
 		},
@@ -138,7 +160,7 @@
 			"patterns": [
 				{
 					"name": "keyword.operator.arithmetic.gauche",
-					"match": "\\b(-)\\b"
+					"match": "\\b(\\-)\\b"
 				}
 			]
 		},
