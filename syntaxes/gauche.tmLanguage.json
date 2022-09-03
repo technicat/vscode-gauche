@@ -16,6 +16,9 @@
 					"include": "#keywords"
 				},
 				{
+					"include": "#libs"
+				},
+				{
 					"include": "#math"
 				},
 				{
@@ -53,7 +56,15 @@
 			"patterns": [
 				{
 					"name": "keyword.control.gauche",
-					"match": "\\b(^|case|cond|cut|define|do|else|guard|if|include|lambda|let|letrec|use)\\b"
+					"match": "\\b(case|cond|cut|define|do|else|guard|if|lambda|let|letrec|let-values)\\b"
+				}
+			]
+		},
+		"libs": {
+			"patterns": [
+				{
+					"name": "keyword.include.gauche",
+					"match": "\\b(include|use)\\b"
 				}
 			]
 		},
@@ -61,7 +72,7 @@
 			"patterns": [
 				{
 					"name": "keyword.operator.arithmetic.gauche",
-					"match": "-"
+					"match": "\\b(-)\\b"
 				}
 			]
 		},
