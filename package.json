@@ -1,0 +1,25 @@
+{
+  "name": "vsgauche",
+  "displayName": "Gauche",
+  "description": "Visual Studio support for Gauche Scheme",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "gauche",
+      "aliases": ["Gauche", "gauche"],
+      "extensions": [".scm"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "gauche",
+      "scopeName": "source.gauche",
+      "path": "./syntaxes/gauche.tmLanguage.json"
+    }]
+  }
+}
