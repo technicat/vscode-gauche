@@ -3,18 +3,50 @@
 	"name": "Gauche",
 	"patterns": [
 		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
+			"include": "#expression"
 		}
 	],
 	"repository": {
+		"expression": {
+			"patterns": [
+				{
+					"include": "#keywords"
+				},
+				{
+					"include": "#strings"
+				},
+				{
+					"include": "#paren-expression"
+				}
+			]
+		},
+		"paren-expression": {
+			"begin": "\\(",
+			"end": "\\)",
+			"beginCaptures": {
+				"0": {
+					"name": "punctuation.paren.open"
+				}
+			},
+			"endCaptures": {
+				"0": {
+					"name": "punctuation.paren.close"
+				}
+			},
+			"name": "expression.group",
+			"patterns": [
+				{
+					"include": "#expression"
+				}
+			]
+		},
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.gauche",
-				"match": "\\b(case|define|if|let)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.gauche",
+					"match": "\\b(case|define|if|let)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.gauche",
