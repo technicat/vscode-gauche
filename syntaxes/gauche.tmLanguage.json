@@ -44,7 +44,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.gauche",
-					"match": "\\b(case|define|if|let)\\b"
+					"match": "\\b(case|cond|define|do|else|guard|if|lambda|let|letrec)\\b"
 				}
 			]
 		},
