@@ -16,6 +16,9 @@
 					"include": "#strings"
 				},
 				{
+					"include": "#regex"
+				},
+				{
 					"include": "#paren-expression"
 				}
 			]
@@ -44,7 +47,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.gauche",
-					"match": "\\b(case|cond|define|do|else|guard|if|lambda|let|letrec)\\b"
+					"match": "\\b(^|case|cond|cut|define|do|else|guard|if|include|lambda|let|letrec|use)\\b"
 				}
 			]
 		},
@@ -58,6 +61,11 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"regexp": {
+			"name": "string.regex.gauche",
+			"begin": "/#",
+			"end": "/"
 		}
 	},
 	"scopeName": "source.gauche"
