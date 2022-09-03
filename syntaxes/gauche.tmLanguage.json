@@ -13,10 +13,19 @@
 		"expression": {
 			"patterns": [
 				{
-					"include": "#keywords"
+					"include": "#controlkeywords"
+				},
+				{
+					"include": "#boolkeywords"
 				},
 				{
 					"include": "#defkeywords"
+				},
+				{
+					"include": "#setkeywords"
+				},
+				{
+					"include": "#letkeywords"
 				},
 				{
 					"include": "#libs"
@@ -55,7 +64,7 @@
 				}
 			]
 		},
-		"keywords": {
+		"controlkeywords": {
 			"patterns": [
 				{
 					"name": "keyword.control.gauche",
@@ -63,11 +72,35 @@
 				}
 			]
 		},
+		"boolkeywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.gauche",
+					"match": "\\b(and|or|not)\\b"
+				}
+			]
+		},
 		"defkeywords": {
 			"patterns": [
 				{
 					"name": "keyword.define.gauche",
-					"match": "\\b(define-class|define-method|define|lambda|let-values|letrec|let)\\b"
+					"match": "\\b(define-class|define-method|define|lambda)\\b"
+				}
+			]
+		},
+		"letkeywords": {
+			"patterns": [
+				{
+					"name": "keyword.let.gauche",
+					"match": "\\b(let-values|letrec|let)\\b"
+				}
+			]
+		},
+		"setkeywords": {
+			"patterns": [
+				{
+					"name": "keyword.set.gauche",
+					"match": "\\b(set\\!|push\\!|pop\\!)\\b"
 				}
 			]
 		},
