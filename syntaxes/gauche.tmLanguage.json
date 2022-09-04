@@ -25,9 +25,6 @@
 					"include": "#eqkeywords"
 				},
 				{
-					"include": "#stringfuns"
-				},
-				{
 					"include": "#listkeywords"
 				},
 				{
@@ -107,15 +104,7 @@
 			"patterns": [
 				{
 					"name": "keyword.logical.gauche",
-					"match": "\\b(eq\\\\?|equal\\\\?|equalv\\\\?|string=\\\\?)\\b"
-				}
-			]
-		},
-		"stringfuns": {
-			"patterns": [
-				{
-					"name": "keyword.string.gauche",
-					"match": "\\b(string-ref|string=\\\\?)\\b"
+					"match": "\\b(eq|equal|equalv|string=)\\\\?\\b"
 				}
 			]
 		},
@@ -130,11 +119,11 @@
 		"define": {
 			"patterns": [
 				{
-					"name": "entity.name.function.lisp.scheme.gauche",
+					"name": "keyword.function.lisp.scheme.gauche",
 					"match": "\\b(define-method|define|lambda)\\b"
 				},
 				{
-					"name": "storage.type.lisp.scheme.gauche",
+					"name": "keyword.type.lisp.scheme.gauche",
 					"match": "\\b(define-class)\\b"
 				}
 			]
