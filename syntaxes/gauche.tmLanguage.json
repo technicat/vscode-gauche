@@ -34,7 +34,10 @@
 					"include": "#boolkeywords"
 				},
 				{
-					"include": "#defkeywords"
+					"include": "#define"
+				},
+				{
+					"include": "#constant"
 				},
 				{
 					"include": "#setkeywords"
@@ -124,11 +127,15 @@
 				}
 			]
 		},
-		"defkeywords": {
+		"define": {
 			"patterns": [
 				{
-					"name": "keyword.define.gauche",
-					"match": "\\b(define-class|define-method|define|lambda)\\b"
+					"name": "entity.name.function.lisp.scheme.gauche",
+					"match": "\\b(define-method|define|lambda)\\b"
+				},
+				{
+					"name": "storage.type.lisp.scheme.gauche",
+					"match": "\\b(define-class)\\b"
 				}
 			]
 		},
@@ -164,6 +171,14 @@
 				}
 			]
 		},
+		"constant": {
+			"patterns": [
+				{
+					"name": "constant.language.boolean.lisp.scheme.gauche",
+					"match": "#[f|t]"
+				}
+			]
+		},
 		"strings": {
 			"name": "string.quoted.double.gauche",
 			"begin": "\"",
@@ -175,7 +190,7 @@
 				}
 			]
 		},
-		"regexp": {
+		"regex": {
 			"name": "string.regex.gauche",
 			"begin": "#/",
 			"end": "/",
