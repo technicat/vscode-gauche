@@ -187,7 +187,7 @@
 			]
 		},
 		"comment": {
-			"name": "comment.line.gauche",
+			"name": "comment.line.semicolon.lisp.scheme.gauche",
 			"begin": ";",
 			"end": "\n"
 		}
