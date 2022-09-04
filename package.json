@@ -1,5 +1,5 @@
 {
-  "name": "vsgauche",
+  "name": "vscode-gauche",
   "displayName": "Gauche",
   "description": "Visual Studio support for Gauche Scheme",
   "version": "0.0.1",
