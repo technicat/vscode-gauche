@@ -163,8 +163,12 @@
 		"constant": {
 			"patterns": [
 				{
-					"name": "constant.language.boolean.lisp.scheme.gauche",
-					"match": "#[f|t]"
+					"name": "constant.language.boolean.false.lisp.scheme.gauche",
+					"match": "#f"
+				},
+				{
+					"name": "constant.language.boolean.true.lisp.scheme.gauche",
+					"match": "#t"
 				}
 			]
 		},
