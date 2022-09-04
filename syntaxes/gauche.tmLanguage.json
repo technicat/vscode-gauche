@@ -192,5 +192,5 @@
 			"end": "\n"
 		}
 	},
-	"scopeName": "source.gauche"
+	"scopeName": "source.lisp.scheme.gauche"
 }

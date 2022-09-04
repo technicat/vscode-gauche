@@ -18,7 +18,7 @@
     }],
     "grammars": [{
       "language": "gauche",
-      "scopeName": "source.gauche",
+      "scopeName": "source.lisp.scheme.gauche",
       "path": "./syntaxes/gauche.tmLanguage.json"
     }]
   }
