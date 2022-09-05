@@ -89,6 +89,10 @@
 				{
 					"name": "keyword.control.gauche",
 					"match": "\\b(case|cond|cut|do|else|guard|if)\\b"
+				},
+				{
+					"name": "keyword.control.begin.lisp.scheme.gauche",
+					"match": "\\b(begin)\\b"
 				}
 			]
 		},
@@ -155,8 +159,12 @@
 		"math": {
 			"patterns": [
 				{
-					"name": "keyword.operator.arithmetic.gauche",
-					"match": "\\b(\\-)\\b"
+					"name": "keyword.operator.arithmetic.minus.lisp.scheme.gauche",
+					"match": "\\b(\\\\-)\\b"
+				},
+				{
+					"name": "keyword.operator.arithmetic.plus.lisp.scheme.gauche",
+					"match": "\\b(\\\\+)\\b"
 				}
 			]
 		},
