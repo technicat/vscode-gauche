@@ -16,6 +16,9 @@
 					"include": "#paren-expression"
 				},
 				{
+					"include": "#filefilter"
+				},
+				{
 					"include": "#fileutil"
 				},
 				{
@@ -92,6 +95,18 @@
 				{
 					"name": "keyword.file.util.directory.fold.lisp.scheme.gauche",
 					"match": "\\b(directory-fold)\\b"
+				},
+				{
+					"name": "keyword.file.util.directory.current.lisp.scheme.gauche",
+					"match": "\\b(current-directory)\\b"
+				}
+			]
+		},
+		"filefilter": {
+			"patterns": [
+				{
+					"name": "keyword.file.filter.fold.lisp.scheme.gauche",
+					"match": "\\b(file-filter-fold)\\b"
 				}
 			]
 		},
