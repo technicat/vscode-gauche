@@ -203,7 +203,7 @@
 					"match": "\\b(define-method)\\b"
 				},
 				{
-					"name": "entity.name.type.class.lisp.scheme.gauche",
+					"name": "entity.name.class.lisp.scheme.gauche",
 					"match": "\\b(define-class)\\b"
 				},
 				{
