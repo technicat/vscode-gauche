@@ -31,10 +31,10 @@
 					"include": "#boolkeywords"
 				},
 				{
-					"include": "#define"
+					"include": "#clos"
 				},
 				{
-					"include": "#clos"
+					"include": "#define"
 				},
 				{
 					"include": "#constant"
@@ -146,12 +146,16 @@
 		"clos": {
 			"patterns": [
 				{
-					"name": "keyword.type.method.lisp.scheme.gauche",
+					"name": "keyword.function.method.lisp.scheme.gauche",
 					"match": "\\b(define-method)\\b"
 				},
 				{
 					"name": "keyword.type.class.lisp.scheme.gauche",
 					"match": "\\b(define-class)\\b"
+				},
+				{
+					"name": "keyword.operator.nextmethod.lisp.scheme.gauche",
+					"match": "\\b(next-method)\\b"
 				}
 			]
 		},
