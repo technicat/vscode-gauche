@@ -22,6 +22,9 @@
 					"include": "#fileutil"
 				},
 				{
+					"include": "#parseopt"
+				},
+				{
 					"include": "#controlkeywords"
 				},
 				{
@@ -29,6 +32,9 @@
 				},
 				{
 					"include": "#listkeywords"
+				},
+				{
+					"include": "#io"
 				},
 				{
 					"include": "#boolkeywords"
@@ -110,6 +116,14 @@
 				}
 			]
 		},
+		"parseopt": {
+			"patterns": [
+				{
+					"name": "keyword.fparseopt.gauche",
+					"match": "\\b(let-args)\\b"
+				}
+			]
+		},
 		"controlkeywords": {
 			"patterns": [
 				{
@@ -133,7 +147,7 @@
 		"boolkeywords": {
 			"patterns": [
 				{
-					"name": "keyword.logical.gauche",
+					"name": "keyword.operator.logical.gauche",
 					"match": "\\b(and|or|not)\\b"
 				}
 			]
@@ -141,7 +155,7 @@
 		"eqkeywords": {
 			"patterns": [
 				{
-					"name": "keyword.logical.gauche",
+					"name": "keyword.operator.logical.gauche",
 					"match": "\\b(eq|equal|equalv|string=)\\\\?\\b"
 				}
 			]
@@ -149,8 +163,16 @@
 		"listkeywords": {
 			"patterns": [
 				{
-					"name": "keyword.list.gauche",
+					"name": "keyword.function.list.lisp.scheme.gauche",
 					"match": "\\b(apply|list|car|caar|cdr|cadr|cddr|quote|remove)\\b"
+				}
+			]
+		},
+		"io": {
+			"patterns": [
+				{
+					"name": "keyword.function.io.lisp.scheme.gauche",
+					"match": "\\b(print|write-string|newline)\\b"
 				}
 			]
 		},
@@ -177,7 +199,7 @@
 					"match": "\\b(define-class)\\b"
 				},
 				{
-					"name": "keyword.operator.nextmethod.lisp.scheme.gauche",
+					"name": "keyword.function.nextmethod.lisp.scheme.gauche",
 					"match": "\\b(next-method)\\b"
 				}
 			]
@@ -231,7 +253,7 @@
 			]
 		},
 		"strings": {
-			"name": "string.quoted.double.gauche",
+			"name": "string.quoted.double.lisp.scheme.gauche",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
