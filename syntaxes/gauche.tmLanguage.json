@@ -187,7 +187,7 @@
 		"define": {
 			"patterns": [
 				{
-					"name": "keyword.function.lisp.scheme.gauche",
+					"name": "entity.name.function.lisp.scheme.gauche",
 					"match": "\\b(define|lambda)\\b"
 				},
 				{
@@ -199,11 +199,11 @@
 		"clos": {
 			"patterns": [
 				{
-					"name": "keyword.function.method.lisp.scheme.gauche",
+					"name": "entity.name.function.method.lisp.scheme.gauche",
 					"match": "\\b(define-method)\\b"
 				},
 				{
-					"name": "keyword.type.class.lisp.scheme.gauche",
+					"name": "entity.name.type.class.lisp.scheme.gauche",
 					"match": "\\b(define-class)\\b"
 				},
 				{
