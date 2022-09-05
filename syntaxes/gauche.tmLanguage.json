@@ -82,8 +82,16 @@
 		"fileutil": {
 			"patterns": [
 				{
-					"name": "keyword.file.util.gauche",
-					"match": "\\b(directory-list|file-is-regular\\\\?)\\b"
+					"name": "keyword.file.util.file.regular.lisp.scheme.gauche",
+					"match": "\\b(file-is-regular\\\\?)\\b"
+				},
+				{
+					"name": "keyword.file.util.directory.list.lisp.scheme.gauche",
+					"match": "\\b(directory-list)\\b"
+				},
+				{
+					"name": "keyword.file.util.directory.fold.lisp.scheme.gauche",
+					"match": "\\b(directory-fold)\\b"
 				}
 			]
 		},
@@ -191,7 +199,7 @@
 				},
 				{
 					"name": "keyword.operator.arithmetic.plus.lisp.scheme.gauche",
-					"match": "\\b(\\\\+)\\b"
+					"match": "\\b(\\+)\\b"
 				}
 			]
 		},
