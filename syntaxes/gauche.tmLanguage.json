@@ -187,11 +187,15 @@
 		"define": {
 			"patterns": [
 				{
-					"name": "entity.name.function.lisp.scheme.gauche",
-					"match": "\\b(define|lambda)\\b"
+					"name": "entity.name.function.define.lisp.scheme.gauche",
+					"match": "\\b(define)\\b"
 				},
 				{
-					"name": "keyword.function.cut.lisp.scheme.gauche",
+					"name": "entity.name.function.lambda.lisp.scheme.gauche",
+					"match": "\\b(lambda)\\b"
+				},
+				{
+					"name": "entity.name.function.cut.lisp.scheme.gauche",
 					"match": "\\b(cut)\\b"
 				}
 			]
