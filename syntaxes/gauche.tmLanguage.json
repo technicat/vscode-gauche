@@ -163,7 +163,7 @@
 		"eqkeywords": {
 			"patterns": [
 				{
-					"name": "keyword.operator.logical.gauche",
+					"name": "keyword.compare.lisp.scheme.gauche",
 					"match": "\\b(eq|equal|equalv|string=)\\\\?\\b"
 				}
 			]
