@@ -276,7 +276,7 @@
 			]
 		},
 		"regex": {
-			"name": "string.regex.gauche",
+			"name": "punctuation.definition.group.regexp.lisp.scheme.gauche",
 			"begin": "#/",
 			"end": "/",
 			"patterns": [
