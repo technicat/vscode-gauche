@@ -34,6 +34,9 @@
 					"include": "#define"
 				},
 				{
+					"include": "#clos"
+				},
+				{
 					"include": "#constant"
 				},
 				{
@@ -88,11 +91,19 @@
 			"patterns": [
 				{
 					"name": "keyword.control.gauche",
-					"match": "\\b(case|cond|cut|do|else|guard|if)\\b"
+					"match": "\\b(do|else|guard|if)\\b"
 				},
 				{
 					"name": "keyword.control.begin.lisp.scheme.gauche",
 					"match": "\\b(begin)\\b"
+				},
+				{
+					"name": "keyword.control.case.lisp.scheme.gauche",
+					"match": "\\b(case)\\b"
+				},
+				{
+					"name": "keyword.control.cond.lisp.scheme.gauche",
+					"match": "\\b(cond)\\b"
 				}
 			]
 		},
@@ -124,10 +135,22 @@
 			"patterns": [
 				{
 					"name": "keyword.function.lisp.scheme.gauche",
-					"match": "\\b(define-method|define|lambda)\\b"
+					"match": "\\b(define|lambda)\\b"
 				},
 				{
-					"name": "keyword.type.lisp.scheme.gauche",
+					"name": "keyword.function.cut.lisp.scheme.gauche",
+					"match": "\\b(cut)\\b"
+				}
+			]
+		},
+		"clos": {
+			"patterns": [
+				{
+					"name": "keyword.type.method.lisp.scheme.gauche",
+					"match": "\\b(define-method)\\b"
+				},
+				{
+					"name": "keyword.type.class.lisp.scheme.gauche",
 					"match": "\\b(define-class)\\b"
 				}
 			]
