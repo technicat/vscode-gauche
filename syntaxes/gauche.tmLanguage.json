@@ -147,8 +147,16 @@
 		"boolkeywords": {
 			"patterns": [
 				{
-					"name": "keyword.operator.logical.gauche",
-					"match": "\\b(and|or|not)\\b"
+					"name": "keyword.logical.not.lisp.scheme.gauche",
+					"match": "\\b(not)\\b"
+				},
+				{
+					"name": "keyword.logical.and.lisp.scheme.gauche",
+					"match": "\\b(and)\\b"
+				},
+				{
+					"name": "keyword.logical.or.lisp.scheme.gauche",
+					"match": "\\b(or)\\b"
 				}
 			]
 		},
