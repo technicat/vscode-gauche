@@ -16,6 +16,9 @@
 					"include": "#paren-expression"
 				},
 				{
+					"include": "#libs"
+				},
+				{
 					"include": "#filefilter"
 				},
 				{
@@ -53,9 +56,6 @@
 				},
 				{
 					"include": "#letkeywords"
-				},
-				{
-					"include": "#libs"
 				},
 				{
 					"include": "#regex"
@@ -105,6 +105,14 @@
 				{
 					"name": "keyword.file.util.directory.current.lisp.scheme.gauche",
 					"match": "\\b(current-directory)\\b"
+				},
+				{
+					"name": "keyword.file.util.directory.copy.lisp.scheme.gauche",
+					"match": "\\b(copy-directory\\\\*)\\b"
+				},
+				{
+					"name": "keyword.file.util.copy.keyword.lisp.scheme.gauche",
+					"match": "\\b(if-exists)\\b"
 				}
 			]
 		},
